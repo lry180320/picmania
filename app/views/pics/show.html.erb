@@ -1,0 +1,12 @@
+<div class="panel panel-default">
+  <div class="panel-heading center"><%= image_tag @pic.image.url(:medium) %></div>
+  <div class="panel-body">
+    <%= @pic.description %><br>
+    <strong><%= @pic.user.name %></strong><br/><br/>
+
+    <% if @pic.user == current_user %>
+      <%= link_to 'Bearbeiten', edit_pic_path(@pic) %> |
+    <% end %>
+    <%= link_to "Zurück", :back %>
+  </div>
+</div>
