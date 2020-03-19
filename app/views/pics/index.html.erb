@@ -1,4 +1,5 @@
-<div id="pics" class="transitions-enabled">
+<div class="center">
+<div id="pics" class="transitions-enabled center">
   <% @pics.each do |pic| %>
     <div class="box">
       <div class="panel panel-default">
@@ -17,7 +18,6 @@
     </div>
   <% end %>
 </div>
-<p>
-<div class="center">
-  <%= will_paginate @pics, renderer: BootstrapPagination::Rails %>
+<%= will_paginate @pics, renderer: BootstrapPagination::Rails %>
 </div>
+
