@@ -6,7 +6,7 @@ class PicsController < ApplicationController
   # GET /pics
   # GET /pics.json
   def index
-    @pics = Pic.all.order("created_at DESC").paginate(:page => params[:page], :per_page => 3)
+    @pics = Pic.all.order("created_at DESC").paginate(:page => params[:page], :per_page => 10)
   end
 
   # GET /pics/1
