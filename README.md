@@ -6,4 +6,4 @@ It was developed by [Leonid Rudy](http://www.flexdoc.xyz) using Ruby on Rails 6 
 
 The working app itself can be found here: [https://lry-picmania.herokuapp.com/](https://lry-picmania.herokuapp.com)
 
-It may take a while to start because it is hosted on a free Heroku account.
+As it's hosted on a free Heroku account, it may take a while to start.
