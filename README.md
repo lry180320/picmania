@@ -1,24 +1,9 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Picmania is a simple web app that allows you to publish your photos/pictures on Internet and further control them.
 
-Things you may want to cover:
+It was developed by [Leonid Rudy](http://www.flexdoc.xyz) using Ruby on Rails 6 to show how that technology can be learnt just in two weeks (at that, mostly by weekends and in other spare time).
 
-* Ruby version
+The working app itself can be found here: [https://lry-picmania.herokuapp.com/](https://lry-picmania.herokuapp.com)
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+It may take a while to start because it is hosted on a free Heroku account.
