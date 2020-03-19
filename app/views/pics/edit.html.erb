@@ -2,5 +2,5 @@
 
 <%= render 'form', pic: @pic %>
 
-<%= link_to 'Schauen', @pic %> |
+<%= link_to 'Schauen', pic_path(@pic, page: params[:page]) %> |
 <%= link_to 'Zurück', :back %>

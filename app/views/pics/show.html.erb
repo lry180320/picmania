@@ -5,8 +5,8 @@
     <strong><%= @pic.user.name %></strong><br/><br/>
 
     <% if @pic.user == current_user %>
-      <%= link_to 'Bearbeiten', edit_pic_path(@pic) %> |
+      <%= link_to 'Bearbeiten', edit_pic_path(@pic, page: params[:page]) %> |
     <% end %>
-    <%= link_to "Zurück", :back %>
+    <%= link_to "Zurück", pics_path(page: params[:page]) %>
   </div>
 </div>

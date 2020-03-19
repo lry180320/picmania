@@ -3,14 +3,14 @@
   <% @pics.each do |pic| %>
     <div class="box">
       <div class="panel panel-default">
-        <%= link_to image_tag(pic.image.url(:medium)), pic %>
+        <%= link_to image_tag(pic.image.url(:medium)), pic_path(pic, page: @pics.current_page) %>
         <div class="panel-body">
           <%= pic.description %><br/>
           <strong><%= pic.user.name if pic.user %></strong>
         </div>
         <% if pic.user == current_user %>
           <div class="panel-footer">
-            <%= link_to 'Bearbeiten', edit_pic_path(pic) %>
+            <%= link_to 'Bearbeiten', edit_pic_path(pic, page: @pics.current_page) %>
             <%= link_to 'Löschen', pic, method: :delete, data: { confirm: 'Sind Sie sicher?' } %>
           </div>
         <% end %>

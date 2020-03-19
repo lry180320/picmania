@@ -6,7 +6,7 @@ class PicsController < ApplicationController
   # GET /pics
   # GET /pics.json
   def index
-    @pics = Pic.all.order("created_at DESC").paginate(:page => params[:page], :per_page => 10)
+    @pics = Pic.all.order("created_at DESC").paginate(:page => params[:page], :per_page => 3)
   end
 
   # GET /pics/1
@@ -44,7 +44,7 @@ class PicsController < ApplicationController
   def update
     respond_to do |format|
       if @pic.update(pic_params)
-        format.html { redirect_to @pic, notice: 'Pic wurde erfolgreich aktualisiert.' }
+        format.html { redirect_to pic_path(@pic, page: params[:page]), notice: 'Pic wurde erfolgreich aktualisiert.' }
         format.json { render :show, status: :ok, location: @pic }
       else
         format.html { render :edit }
